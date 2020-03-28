@@ -1,0 +1,147 @@
+html,
+body {
+  width: 600px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Courier, sans-serif;
+  background: #364f6b;
+}
+
+#url {
+  margin-top: 130px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+#invalid {
+  display: none;
+  margin-top: 0;
+  padding: 20px;
+  font-size: 35px;
+  text-align: center;
+  opacity: 0.5;
+  color: white;
+}
+
+#loading {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#domaininfo {
+  display: none;
+  padding: 10px;
+  color: #f0f0f0;
+  overflow: hidden;
+}
+
+#domaininfo>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px;
+  padding: 0;
+  font-size: 14px;
+  border-radius: 10px;
+  color: #071e3d;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#domaininfo:hover>div {
+  opacity: 0.6;
+}
+
+#domaininfo>div:hover {
+  opacity: 1;
+}
+
+#domaininfo>div span:first-child,
+#domaininfo>div span:last-child {
+  padding: 3px 10px;
+  border-radius: 7px;
+  color: white;
+}
+
+#domaininfo>div span:first-child {
+  background-color: #8b8b8b;
+}
+
+#domaininfo>div span:last-child {
+  background-color: green;
+}
+
+#export {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  cursor: pointer;
+  background: #273f5a;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#export svg {
+  width: 17px;
+  padding: 9px;
+  fill: #bbb;
+  transition: all 0.3s ease;
+}
+
+#export:hover {
+  background: #20334a;
+}
+
+#export:hover svg {
+  fill: white;
+}
+
+#export:active {
+  background: #4779b1;
+}
+
+@keyframes ball-beat {
+  50% {
+    opacity: 0.2;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ball-beat>div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  border-radius: 100%;
+  background-color: white;
+  -webkit-animation: ball-beat 0.7s 0s infinite linear;
+  animation: ball-beat 0.7s 0s infinite linear;
+}
+
+.ball-beat>div:nth-child(2n-1) {
+  -webkit-animation-delay: -0.35s !important;
+  animation-delay: -0.35s !important;
+}
