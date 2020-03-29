@@ -1,0 +1,29 @@
+{
+  "name": "nic.ge-lookup",
+  "version": "1.0.0",
+  "description": "Fetches GE domain WHOIS information from https://nic.ge/",
+  "main": "index.js",
+  "scripts": {
+    "start:firefox": "web-ext run --target=firefox-desktop --source-dir ./src/ --verbose",
+    "start:chromium": "web-ext run --target=chromium --source-dir ./src/ --verbose",
+    "build": "web-ext build --source-dir ./src/ --artifacts-dir ./dist/ --overwrite-dest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s3cb0y/nic.ge-lookup.git"
+  },
+  "keywords": [
+    "whois",
+    "domain",
+    "webextension"
+  ],
+  "author": "s3cb0y",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s3cb0y/nic.ge-lookup/issues"
+  },
+  "homepage": "https://github.com/s3cb0y/nic.ge-lookup#readme",
+  "devDependencies": {
+    "web-ext": "^4.1.0"
+  }
+}
