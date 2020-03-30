@@ -1,6 +1,35 @@
 # Nic.ge Lookup - WebExtension
 
-Fetches GE domain WHOIS information from [nic.ge](https://nic.ge).
+### Fetches GE domain WHOIS information from [nic.ge](https://nic.ge).
 
-## License
+This is an open-source cross-browser compatible web-extension
+which fetches GE domain WHOIS information from https://nic.ge/ website,
+parses output and displays it to user in browser_action popup window.
+
+
+## How to build
+
+```
+$ npm install
+$ npm run build
+```
+
+## How to run
+
+```
+$ npm run start:firefox
+$ npm run start:chromium
+```
+
+## How to install
+
+### Mozilla Firefox
+
+Install from AMO.
+
+### Google Chrome
+
+Install from Chrome Web Store.
+
+# License
 MIT
