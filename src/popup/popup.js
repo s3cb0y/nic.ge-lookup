@@ -3,7 +3,7 @@ const loadingElement = document.getElementById('loading');
 const invalidElement = document.getElementById('invalid');
 const domaininfoElement = document.getElementById('domaininfo');
 const exportElement = document.getElementById('export');
-let exportData = [];
+const exportData = [];
 
 exportElement.addEventListener('click', function (event) {
   if (exportData.length) {
