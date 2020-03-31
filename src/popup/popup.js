@@ -4,6 +4,14 @@ const invalidElement = document.getElementById('invalid');
 const domaininfoElement = document.getElementById('domaininfo');
 const exportElement = document.getElementById('export');
 const exportData = [];
+const subDomains = [
+  'com.ge',
+  'edu.ge',
+  'org.ge',
+  'net.ge',
+  'pvt.ge',
+  'school.ge'
+];
 
 exportElement.addEventListener('click', function (event) {
   if (exportData.length) {
@@ -29,7 +37,12 @@ if (chrome) {
 function process(tabs) {
   // Extract domain from url
   const urlParts = new URL(tabs[0].url).hostname.split('.');
-  const url = urlParts.slice(urlParts.length - 2).join('.');
+  let url = urlParts.slice(urlParts.length - 2).join('.');
+
+  if (subDomains.includes(url)) {
+    url = urlParts.slice(urlParts.length - 3).join('.');
+  }
+
   urlElement.innerText = url;
 
   // Check if domain ends with .ge
