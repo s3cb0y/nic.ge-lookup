@@ -1,6 +1,6 @@
 {
   "name": "nic.ge-lookup",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Fetches GE domain WHOIS information from https://nic.ge/",
   "main": "index.js",
   "scripts": {

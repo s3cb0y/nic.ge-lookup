@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "2.0",
   "name": "Nic.ge Lookup",
   "description": "Fetches GE domain WHOIS information from https://nic.ge/",
   "author": "s3cb0y",
