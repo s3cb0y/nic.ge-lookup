@@ -25,7 +25,7 @@ $ npm run start:chromium
 
 ### Mozilla Firefox
 
-Install from AMO.
+https://addons.mozilla.org/en-US/firefox/addon/nic-ge-lookup/
 
 ### Google Chrome
 
